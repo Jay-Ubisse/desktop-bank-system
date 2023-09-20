@@ -12,9 +12,18 @@ public class Custumer extends Person {
     private String custumerID;
     private int accountNumber;
 
-    public Custumer(String custumerID, String name, String surname, String identidyCardNumber, String bithDate, String gender, String phoneNumber, String secondPhoneNumber, int nuit, String address, String email) {
+    public Custumer(
+            String custumerID, String name, String surname, 
+            String identidyCardNumber, String bithDate, 
+            String gender, String phoneNumber, String secondPhoneNumber, 
+            int nuit, String address, String email) 
+    {
         super(name, surname, identidyCardNumber, bithDate, gender, phoneNumber, secondPhoneNumber, nuit, address, email);
         this.custumerID = custumerID;
+    }
+    
+    public void setAccountNumber(int accountNumber) {
+        this.accountNumber = accountNumber;
     }
 
     public String getCustumerID() {
